@@ -7,8 +7,14 @@
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
-### Feito com HTML, CSS, JS, Jquery e Jquery Collision:
-### Tela do projeto: EM BREVE!!!
+## Feito com HTML, CSS, JS, Jquery e Jquery Collision:
+### Telas do projeto:
+
+### Tela do inicio:
+<img height="500" src="https://github.com/PedrohvFernandes/jogo-js/blob/main/Assets/img/screenshot/Screen1.png">
+
+### Tela do game:
+<img height="500" src="https://github.com/PedrohvFernandes/jogo-js/blob/main/Assets/img/screenshot/Screen2.png">
 
 ### Caso queria testar(hospedado na Netlify): https://jogoderesgate.netlify.app
 
