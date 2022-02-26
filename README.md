@@ -10,7 +10,7 @@
 ### Feito com HTML, CSS, JS, Jquery e Jquery Collision:
 ### Tela do projeto: EM BREVE!!!
 
-### Caso queria testar(hospedado na Netlify): EM BREVE!!!
+### Caso queria testar(hospedado na Netlify): https://jogoderesgate.netlify.app
 
 ## Tecnologias:
 - HTML: <img align="center" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
