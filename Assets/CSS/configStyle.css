@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #603a03;
+  --main-color-button: #8a745c;
+}
+
+@font-face {
+  font-family: Titulo;
+  src: url(../font/ANODETONOONE.TTF);
+}
+
+h1 {
+  font-family: Titulo;
+  font-size: 40px;
+  color: var(--main-color);
+}
+
+body {
+  background-image: url(../img/fundo.jpg);
+  /* background-repeat: no-repeat;
+  background-size:cover; */
+}
