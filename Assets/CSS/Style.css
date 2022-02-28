@@ -440,16 +440,22 @@ h3 {
 }
 
 footer{
-  background-color: var(--main-color);
   color: #fff;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+
+}
+
+footer div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 50%;
-  margin: auto;
+  background-color: var(--main-color);
   padding: 15px;
+  border-radius: 15px;
 }
 
 footer img{
