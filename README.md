@@ -18,6 +18,22 @@
 
 ### Caso queria testar(hospedado na Netlify): https://jogoderesgate.netlify.app
 
+## Teclas do game:
+#### W -> pra Cima
+#### D -> pra Baixo
+#### F -> Atirar
+#### Esc -> pausar o game para resetar ou continuar(não implementado o continuar)
+
+## Como jogar e objetivos:
+Para jogar basta usar as teclas W e D para desviar ou se posicionar para atirar nos alvos inimigos com a tecla F. O objetivo é simples é sempre tentar resgatar o seu alido com o seu helicoptero, se não conseguir faça com que ele chegue no final e se perder as 3 lifes é game over.
+
+## Tabela de pontuação:
+- Levar dano dos alvos -> Helicoptero: -1 life / Carro: - 1 life
+- Destruir alvos -> Helicoptero: +100pontos / Carro: +50pontos
+- Salvar um alidado / aliado chegar no final -> Salvos: +1Ponto
+- Perder o aliado -> -50pontos e perdido: +1
+- Deixar os alvos chegar ate o outro lado do mapa -> -25pontos
+
 ## Tecnologias:
 - HTML: <img align="center" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
 - CSS <img align="center" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
