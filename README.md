@@ -24,7 +24,7 @@
 #### F -> Atirar
 #### Esc -> pausar o game para resetar ou continuar(não implementado o continuar)
 
-## Como jogar e objetivos:
+## Como jogar e objetivo:
 Para jogar basta usar as teclas W e D para desviar ou se posicionar para atirar nos alvos inimigos com a tecla F. O objetivo é simples é sempre tentar resgatar o seu alido com o seu helicoptero, se não conseguir faça com que ele chegue no final e se perder as 3 lifes é game over.
 
 ## Tabela de pontuação:
