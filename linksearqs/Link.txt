@@ -1,0 +1,8 @@
+https://www.dropbox.com/s/17010wb608q4olu/JogosHTML5.zip?dl=0
+
+https://keycode.info
+
+keycode é um evento js tipo onclick, que se a gente der um console.log
+conseguiremos ver o valor da tecla e os eventos dela
+
+https://craftpix.net

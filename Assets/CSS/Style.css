@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 #container {
   width: 950px;
   height: auto;
@@ -60,6 +65,19 @@
   margin-top: 100px;
   text-align: center;
   padding: 10px;
+  border-radius: 10px;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+#inicio:hover {
+  border-radius: 0px;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .div-button {
@@ -68,7 +86,7 @@
 
 .button {
   border-color: var(--main-color);
-  border-radius: 5px;
+  border-radius: 10px;
   color: #fff;
   background-color: var(--main-color-button);
   position: relative;
@@ -120,13 +138,321 @@
 
 .introducao {
   background-color: var(--main-color);
+  border-radius: 10px;
   padding: 15px 10px;
   color: #fff;
   font-size: 20px;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
-.teclas:hover {
+.introducao:hover {
+  border-radius: 0px;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.teclas {
   background-color: var(--main-color-button);
   border-radius: 50px;
   padding: 5px 5px 5px 5px;
+}
+
+/* Animation */
+.anima1 {
+  background-image: url(../img/apache.png);
+  /* O play é um keyframe criada */
+  animation: play 0.5s steps(2) infinite;
+
+  /* Prefixos por exemplo webkit->chrome, são proprietarios a cada navegador para que reconheçam o animation */
+  /* steps -> quadros por segundo no caso 0.5 segungdos e a animação é infinita. Obs: quadros são quantas animações tem na imagem */
+  -webkit-animation: play 0.5s steps(2) infinite;
+  -moz-animation: play 0.5s steps(2) infinite;
+  -ms-animation: play 0.5s steps(2) infinite;
+  -o-animation: play 0.5s steps(2) infinite;
+}
+
+/* Esse keyframe play a gente inidica o inicio da animação, a posição inicial dela -> from
+depois a gnete ingica a posição final dela -> to
+a gente fala que a imagem do helicoptero vai estar posicionada na posição 0px ate -512px.
+
+A imagem do helicoptero esta sendo utilizada como fundo
+possuindo 512px de largura que é o tamanho total, e cada um dos quadros dessa imagem são 256 px de tamanho.
+
+Quando falo quadros são quantas animações ele possui
+256px é ele parado e os outros 256px que é o outro quadro é ele se movimentando
+
+Com isso no steps a gente indica quantos quadros totais tem na imagem e no background o total de um quadro com o outro
+*/
+@keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -512px;
+  }
+}
+
+@-webkit-keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -512px;
+  }
+}
+
+@-moz-keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -512px;
+  }
+}
+
+@-ms-keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -512px;
+  }
+}
+
+@-o-keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -512px;
+  }
+}
+
+.anima2 {
+  background-image: url(../img/inimigo1.png);
+  animation: play 0.5s steps(2) infinite;
+  -webkit-animation: play 0.5s steps(2) infinite;
+  -moz-animation: play 0.5s steps(2) infinite;
+  -ms-animation: play 0.5s steps(2) infinite;
+  -o-animation: play 0.5s steps(2) infinite;
+}
+
+/* Aqui são 12 quadros porque a imagem tem 12 quadros, possuindo no total 528px, sendo que cada quadro tem 44px */
+.anima3 {
+  background-image: url(../img/amigo.png);
+  animation: play2 0.9s steps(12) infinite;
+  -webkit-animation: play2 0.9s steps(12) infinite;
+  -moz-animation: play2 0.9s steps(12) infinite;
+  -ms-animation: play2 0.9s steps(12) infinite;
+  -o-animation: play2 0.9s steps(12) infinite;
+}
+
+@keyframes play2 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+@-webkit-keyframes play2 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+@-moz-keyframes play2 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+@-ms-keyframes play2 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+@-o-keyframes play2 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+#disparo {
+  width: 50px;
+  height: 8px;
+  position: absolute;
+  background-image: url(../img/disparo.png);
+}
+
+#explosao {
+  width: 15px;
+  height: 87px;
+  position: absolute;
+}
+
+#explosao2 {
+  width: 44px;
+  height: 51px;
+  position: absolute;
+}
+
+.anima4 {
+  width: 44px;
+  height: 51px;
+  background-image: url(../img/amigo_morte.png);
+  animation: play3 0.5s steps(7) infinite;
+  -webkit-animation: play3 0.5s steps(7) infinite;
+  -moz-animation: play3 0.5s steps(7) infinite;
+  -ms-animation: play3 0.5s steps(7) infinite;
+  -o-animation: play3 0.5s steps(7) infinite;
+}
+
+@keyframes play3 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+@-webkit-keyframes play3 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+@-moz-keyframes play3 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+@-ms-keyframes play3 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+@-o-keyframes play3 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+#placar {
+  width: 450px;
+  height: 50px;
+  position: absolute;
+  left: 5px;
+  top: 590px;
+}
+
+h2 {
+  font-family: Titulo;
+  font-size: 20px;
+  color: #fff;
+}
+
+.animaSalvamento {
+  width: 50px;
+  height: 51px;
+  position: absolute;
+  background-image: url(../img/Flash_A_01.png);
+  background-position: -35px;
+}
+
+#energia {
+  width: 140px;
+  height: 38px;
+  position: absolute;
+  left: 750px;
+  top: 7px;
+}
+
+h3 {
+  font-family: Titulo;
+  font-size: 20px;
+  color: #603a03;
+  cursor: pointer;
+}
+#fim p{
+  color: #603a03;
+}
+
+#fim {
+  width: 350px;
+  height: 200px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+
+#pause p{
+  color: #603a03;
+}
+
+#pause {
+  width: 350px;
+  height: 200px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+footer{
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  margin: auto;
+  padding: 15px;
+}
+
+footer img{
+  width: 35px;
+  height: 35px;
 }
