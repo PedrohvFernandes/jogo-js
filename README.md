@@ -25,7 +25,7 @@
 #### Esc -> pausar o game para resetar ou continuar
 
 ## Como jogar e objetivo:
-Para jogar basta usar as teclas W e D para desviar ou se posicionar para atirar nos alvos inimigos com a tecla F. O objetivo é simples é sempre tentar resgatar o seu alido com o seu helicoptero, se não conseguir faça com que ele chegue no final e se perder as 3 lifes é game over.
+Para jogar basta usar as teclas W e D para desviar ou se posicionar para atirar nos alvos inimigos com a tecla F. O objetivo é simples é sempre tentar resgatar o seu aliado com o seu helicoptero, se não conseguir faça com que ele chegue no final e se perder as 3 lifes é game over.
 
 ## Tabela de pontuação:
 - Levar dano dos alvos -> Helicoptero: -1 life / Carro: - 1 life
